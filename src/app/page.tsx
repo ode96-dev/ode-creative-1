@@ -7,7 +7,6 @@ import HeroSection from "@/components/hero-section/hero-section";
 
 export default function HomePage() {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <SmoothScrollProvider>
@@ -15,10 +14,7 @@ export default function HomePage() {
         <Navbar onOpenConsultation={() => setIsConsultationOpen(true)} />
 
         <main>
-          <HeroSection
-            onOpenConsultation={() => setIsConsultationOpen(true)}
-            onOpenVideo={() => setIsVideoOpen(true)}
-          />
+          <HeroSection onOpenConsultation={() => setIsConsultationOpen(true)} />
         </main>
       </div>
     </SmoothScrollProvider>
