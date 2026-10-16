@@ -14,7 +14,7 @@ export default function PartnerLogos() {
           {partners.map((p) => (
             <div
               key={p.name}
-              className="grayscale hover:grayscale-0 transition-all duration-300"
+              className="cursor-pointer grayscale hover:grayscale-0 transition-all duration-300"
             >
               {p.render}
             </div>

@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import MagneticButton from "../navbar/magnetic-button";
-import SpringTiltCard from "./spring-tilt-card";
+import SpringTiltCard from "../shared/spring-tilt-card";
 import { AnimatePresence, motion } from "motion/react";
 
 interface HeroSectionProps {
