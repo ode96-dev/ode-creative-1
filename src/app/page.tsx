@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar/navbar";
 import HeroSection from "@/components/hero-section/hero-section";
 import PartnerLogos from "@/components/partner-logo/partner-logo";
 import ExperienceSection from "@/components/experience-section/experience-section";
+import RecentWorkSection from "@/components/recent-work-section/recent-work-section";
 
 export default function HomePage() {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
@@ -21,6 +22,10 @@ export default function HomePage() {
           <PartnerLogos />
 
           <ExperienceSection
+            onOpenConsultation={() => setIsConsultationOpen(true)}
+          />
+
+          <RecentWorkSection
             onOpenConsultation={() => setIsConsultationOpen(true)}
           />
         </main>
